@@ -1,0 +1,616 @@
+{
+    "name": "lits2017",
+    "labels": {
+        "0": "background",
+        "1": "liver",
+        "2": "tumer"
+    },
+    "aim_label": "1",
+    "modality": {
+        "0": "CT"
+    },
+    "numTest": 70,
+    "numTraining": 120,
+    "tensorImageSize": "3D",
+    "test": [
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-0.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-1.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-2.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-3.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-4.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-5.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-6.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-7.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-8.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-9.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-10.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-11.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-12.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-13.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-14.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-15.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-16.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-17.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-18.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-19.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-20.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-21.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-22.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-23.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-24.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-25.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-26.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-27.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-28.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-29.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-30.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-31.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-32.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-33.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-34.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-35.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-36.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-37.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-38.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-39.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-40.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-41.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-42.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-43.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-44.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-45.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-46.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-47.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-48.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-49.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-50.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-51.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-52.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-53.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-54.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-55.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-56.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-57.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-58.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-59.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-60.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-61.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-62.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-63.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-64.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-65.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-66.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-67.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-68.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-69.nii",
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-70.nii"
+    ],
+    "train": [
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-0.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-0.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-1.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-1.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-2.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-2.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-3.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-3.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-4.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-4.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-5.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-5.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-6.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-6.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-7.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-7.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-8.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-8.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-9.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-9.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-10.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-10.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-11.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-11.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-12.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-12.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-13.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-13.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-14.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-14.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-15.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-15.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-16.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-16.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-17.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-17.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-18.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-18.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-19.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-19.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-20.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-20.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-21.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-21.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-22.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-22.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-23.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-23.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-24.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-24.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-25.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-25.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-26.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-26.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-27.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-27.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-28.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-28.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-29.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-29.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-30.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-30.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-31.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-31.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-32.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-32.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-33.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-33.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-34.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-34.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-35.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-35.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-36.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-36.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-37.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-37.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-38.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-38.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-39.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-39.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-40.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-40.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-41.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-41.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-42.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-42.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-43.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-43.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-44.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-44.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-45.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-45.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-46.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-46.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-47.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-47.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-48.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-48.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-49.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-49.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-50.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-50.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-51.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-51.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-52.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-52.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-53.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-53.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-54.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-54.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-55.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-55.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-56.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-56.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-57.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-57.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-58.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-58.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-59.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-59.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-60.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-60.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-61.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-61.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-62.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-62.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-63.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-63.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-64.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-64.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-65.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-65.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-66.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-66.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-67.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-67.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-68.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-68.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-69.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-69.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-70.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-70.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-71.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-71.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-72.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-72.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-73.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-73.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-74.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-74.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-75.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-75.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-76.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-76.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-77.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-77.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-78.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-78.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-79.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-79.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-80.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-80.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-81.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-81.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-82.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-82.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-83.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-83.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-84.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-84.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-85.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-85.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-86.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-86.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-87.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-87.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-88.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-88.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-89.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-89.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-90.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-90.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-91.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-91.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-92.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-92.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-93.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-93.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-94.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-94.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-95.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-95.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-96.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-96.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-97.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-97.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-98.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-98.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-99.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-99.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-100.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-100.nii"
+        }
+    ],
+    "valid": [
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-101.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-101.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-102.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-102.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-103.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-103.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-104.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-104.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-105.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-105.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-106.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-106.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-107.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-107.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-108.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-108.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-109.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-109.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-110.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-110.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-111.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-111.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-112.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-112.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-113.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-113.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-114.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-114.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-115.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-115.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-116.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-116.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-117.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-117.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-118.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-118.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-119.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-119.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-120.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-120.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-121.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-121.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-122.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-122.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-123.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-123.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-124.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-124.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-125.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-125.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-126.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-126.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-127.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-127.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-128.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-128.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-129.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-129.nii"
+        },
+        {
+            "image": "/media/wgh/w1/data/LITS/TrainingData/volume-130.nii",
+            "label": "/media/wgh/w1/data/LITS/TrainingData/segmentation-130.nii"
+        }
+    ]
+}

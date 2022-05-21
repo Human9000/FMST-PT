@@ -1,6 +1,9 @@
 # FMST-PT
 FMSF-PT: A fast 3D medical image segmentation framework guided by phased tasks
 
+![image](https://user-images.githubusercontent.com/33023091/169638563-d4b4d644-6e2c-44d4-a48c-21d7b67d77e0.png)
+
+
 We disclosed some codes, including network structure in `./model/fmst.py`, It contains three networks: "snet", "attnett" and "edgenet", which correspond to the three stages in the framework
 
 Data set spectrum and stage attention information are implemented in `./dataset/lits2017.py` as an example. 

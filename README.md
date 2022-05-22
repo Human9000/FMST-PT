@@ -21,7 +21,7 @@ In addition, we provided the configuration file format of the data set in `./dat
     "modality": {
         "0": "CT"
     },
-    "numTest": 70,
+    "numTest": 71,
     "numTrain": 101,
     "numValid": 30,
     "tensorImageSize": "3D",

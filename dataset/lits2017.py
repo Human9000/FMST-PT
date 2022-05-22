@@ -6,7 +6,7 @@ from torch.utils.data import Dataset
 import SimpleITK as sitk
 from tqdm import tqdm
 from scipy.stats import norm
-from transforms import Compose , RandomCrop,  RandomFlip, RandomRotate, RandomTranspose
+from transforms import Compose, RandomCrop,  RandomFlip, RandomRotate, RandomTranspose,Mapping
 
 
 class DataAnalysis():
@@ -105,22 +105,25 @@ class DataAnalysis():
         val = []
         te = []
 
-        print('Data Analysis  ...')
+        print('\033[34;0mData Analysis  ... \033[0m')
         for path in tqdm(self.info['train'], desc='train', total=len(self.info['train'])):
             item = self.readTrainFile(path['image'], path['label'])
             mu, theta = item['conf']['mu'], item['conf']['theta']
             spectrum.extend([mu + theta, mu - theta])
             tr.append(item)
+            break
 
         for path in tqdm(self.info['valid'], desc='valid', total=len(self.info['valid'])):
             item = self.readTrainFile(path['image'], path['label'])
             mu, theta = item['conf']['mu'], item['conf']['theta']
             spectrum.extend([mu + theta, mu - theta])
             val.append(item)
+            break
 
         for path in tqdm(self.info['test'], desc='test', total=len(self.info['test'])):
-            item = self.readTestFile(path['image'], path['label'])
+            item = self.readTestFile(path)
             te.append(item)
+            break
 
         mu = np.mean(spectrum)
         theta = np.std(spectrum)
@@ -128,14 +131,16 @@ class DataAnalysis():
         # [1%, 99%] 置信度
         l = norm.ppf(0.01) * theta + mu
         r = norm.isf(0.01) * theta + mu
-
+        print(l, r)
         for i in tr:
-            i['image'] = torch.clamp(i['image'], l, r)
+            i['image'] = (torch.clamp(i['image'], l, r) - mu) / theta
         for i in val:
-            i['image'] = torch.clamp(i['image'], l, r)
+            i['image'] = (torch.clamp(i['image'], l, r) - mu) / theta
         for i in te:
-            i['image'] = torch.clamp(i['image'], l, r)
+            i['image'] = (torch.clamp(i['image'], l, r) - mu) / theta
 
+        print(tr[0]['image'])
+        
         dataset = {
             'train': tr,
             'valid': val,
@@ -155,11 +160,10 @@ class CTDataset(Dataset):
 
         self.data_type = data_type
         self.transforms = transforms
-        self.dataset = DataAnalysis(
-            interpolate, ATTN, data_conf).dataset[data_type]
+        self.dataset = DataAnalysis(interpolate, ATTN, data_conf).dataset[data_type]
 
     def __len__(self):
-        return len(self.dataset[self.data_type])
+        return len(self.dataset)
 
     def __getitem__(self, index):
         item = self.dataset[index]
@@ -171,16 +175,18 @@ class CTDataset(Dataset):
 
 
 def main():
-    ct = CTDataset(data_conf='lits2017.json',
+    ct = CTDataset(data_type='train',
+                   data_conf='lits2017.json',
                    transforms=Compose(
-                       RandomCrop(slices=96),  # 随机裁剪96个切片
-                       RandomFlip(dims=[0, 1, 2]),  # 维度内依概率翻转默认50%概率
-                       RandomRotate(max_angle=180),  # 最后两个维度随机旋转[0-180°]
-                       RandomTranspose(dims=[0, 1, 2]),  # 依概率随机交换指定维度默认概率50%
+                        RandomCrop(slices=96),  # 随机裁剪96个切片
+                        RandomFlip(dims=[0, 1, 2]),  # 维度内依概率翻转默认50%概率
+                        RandomRotate(max_angle=180),  # 最后两个维度随机旋转[0-180°]
+                        RandomTranspose(dims=[0, 1, 2]),  # 依概率随机交换指定维度默认概率50%
+                        Mapping(0,1), # 数据最小值和最大值映射为[0-1]
                    ))
     item = ct.__getitem__(0)
-    
-    
+    print(item['image'])
+
 
 if __name__ == '__main__':
     main()

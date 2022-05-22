@@ -1,5 +1,5 @@
 import random
-from torchvision.transforms.functional import rotate
+from torchvision.transforms.functional import rotate,InterpolationMode
 
 
 class RandomCrop:
@@ -24,13 +24,13 @@ class RandomCrop:
         
     def __call__(self, item):
         arg = []
-        for dim in range(len(item["image"])):
+        for dim in range(len(item["image"].shape)):
             l, r = self._get_range(item["image"].size(dim), self.slices)
             arg.extend([l,r])
         
-        item['image'] = self.__do__(item['image'])
-        item['label'] = self.__do__(item['label'])
-        item['attn'] = self.__do__(item['attn'])
+        item['image'] = self.__do__(item['image'], *arg)
+        item['label'] = self.__do__(item['label'], *arg)
+        item['attn'] = self.__do__(item['attn'], *arg)
         
         return item
 
@@ -68,7 +68,7 @@ class RandomTranspose:
         if img is None:
             return None
         
-        if prob[1] <= self.prob:
+        if prob <= self.prob:
             dims = self.dims
             img = img.permute(*dims)
         return img
@@ -92,7 +92,8 @@ class RandomRotate:
         if img is None:
             return None
         
-        img = rotate(img, angle) #, InterpolationMode.BILINEAR)
+        full_color = img.min()
+        img = rotate(img - full_color, angle, InterpolationMode.BILINEAR) + full_color
         return img
 
     def __call__(self, item):
@@ -100,6 +101,22 @@ class RandomRotate:
         item['image'] = self._rotate(item['image'], angle)
         item['label'] = self._rotate(item['label'], angle)
         item['attn'] = self._rotate(item['attn'], angle)
+        return item
+
+
+class Mapping:
+    def __init__(self, left=0, right = 1):
+        self.l = left
+        self.r = right
+
+    def _do(self, img):
+        m_in =  img.min()
+        d = img.max() - m_in
+        img = (img - m_in) / d * (self.r - self.l) + self.l 
+        return img
+
+    def __call__(self, item):
+        item['image'] = self._do(item['image'])
         return item
 
 

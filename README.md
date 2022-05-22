@@ -22,7 +22,8 @@ In addition, we provided the configuration file format of the data set in `./dat
         "0": "CT"
     },
     "numTest": 70,
-    "numTraining": 120,
+    "numTrain": 101,
+    "numValid": 30,
     "tensorImageSize": "3D",
     "test": [
         "./Test_Data/test-volume-0.nii",

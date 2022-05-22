@@ -27,7 +27,7 @@ In addition, we provided the configuration file format of the data set in `./dat
     "tensorImageSize": "3D",
     "test": [
         "./Test_Data/test-volume-0.nii",
-        "./Test_Data/test-volume-70.nii"
+        "./Test_Data/test-volume-69.nii"
     ],
     "train": [
         {

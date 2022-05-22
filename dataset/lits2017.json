@@ -9,8 +9,9 @@
     "modality": {
         "0": "CT"
     },
-    "numTest": 70,
-    "numTraining": 120,
+    "numTest": 71,
+    "numTrain": 101,
+    "numValid": 30,
     "tensorImageSize": "3D",
     "test": [
         "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-0.nii",

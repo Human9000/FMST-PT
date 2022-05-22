@@ -9,7 +9,7 @@
     "modality": {
         "0": "CT"
     },
-    "numTest": 71,
+    "numTest": 70,
     "numTrain": 101,
     "numValid": 30,
     "tensorImageSize": "3D",
@@ -83,8 +83,7 @@
         "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-66.nii",
         "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-67.nii",
         "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-68.nii",
-        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-69.nii",
-        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-70.nii"
+        "/media/wgh/w2/data/LITS2017/Test_Data/test-volume-69.nii"
     ],
     "train": [
         {

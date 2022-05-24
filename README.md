@@ -53,7 +53,7 @@ In addition, we provided the configuration file format of the data set in `./dat
 ```
 The reasoning speed of traditional networks such as swinnet, unetr, nnunet and nnformer is FPS < 1, but our reasoning speed is super fast. You can get any 3D medical impact data after analysis through FPS > 15 processing speed. Tested on FPS 2017_ consenuse>30, FPS_ attention>20, FPS_ edge>15.
 
-We uploaded the reasoning results on lits2017 for reference. Location: [All stage](), [Consensus](), [Attention](), [Edge](), and some of them are shown in the figure below:
+We uploaded the reasoning results on lits2017 for reference. Location: [All stage](https://github.com/Human9000/FMST-PT/tree/main/val), [Consensus](https://github.com/Human9000/FMST-PT/tree/main/val/attention), [Attention](https://github.com/Human9000/FMST-PT/tree/main/val/consensus), [Edge](https://github.com/Human9000/FMST-PT/tree/main/val/edge), and some of them are shown in the figure below:
 
 - Consensus by `sunet`
 

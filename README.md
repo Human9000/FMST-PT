@@ -5,6 +5,8 @@ FMSF-PT: A fast 3D medical image segmentation framework guided by phased tasks
 
 The reasoning speed of traditional networks such as swinnet, unetr, nnunet and nnformer is FPS < 1, but our reasoning speed is super fast. You can get any 3D medical impact data after analysis through FPS > 15 processing speed. Tested on FPS 2017_ consenuse>30, FPS_ attention>20, FPS_ edge>15.
 
+And we propose a dice evaluation for compressed data mask, attndice and a corresponding loss function attnloss. When the mask data is 0 or 1, attndice = dice. When the value is between 0 and 1, attndice > dice, which can more accurately judge the edge accuracy of compressed mask.
+
 We uploaded the reasoning results on lits2017 for reference. Location: [All stage](https://github.com/Human9000/FMST-PT/tree/main/val), [Consensus](https://github.com/Human9000/FMST-PT/tree/main/val/attention), [Attention](https://github.com/Human9000/FMST-PT/tree/main/val/consensus), [Edge](https://github.com/Human9000/FMST-PT/tree/main/val/edge), and some of them are shown in the figure below:
 
 - Consensus by `sunet`

@@ -23,7 +23,14 @@ We uploaded the reasoning results on lits2017 for reference. Location: [All stag
 
 
 
-We disclosed some codes, including network structure in `./model/fmst.py`, It contains three networks: "snet", "attnett" and "edgenet", which correspond to the three stages in the framework
+We disclosed some codes, including network structure in `./model/fmst.py`, It contains three networks: "snet", "attnett" and "edgenet", which correspond to the three stages in the framework.
+
+You can use our program to carry out secondary training one by one through the following commands(You need to modify the optimal weight position specified in the subsequent code after each training!):
+```cmd
+python train_attention.py
+python train_consensus.py
+python train_edge.py
+```
 
 Data set spectrum and stage attention information are implemented in `./dataset/lits2017.py` as an example. 
 

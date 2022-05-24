@@ -51,6 +51,9 @@ In addition, we provided the configuration file format of the data set in `./dat
     ]
 }
 ```
+
+We uploaded the reasoning results on lits2017 for reference. Location: [All stage](), [Consensus](), [Attention](), [Edge](), and some of them are shown in the figure below:
+
 - Consensus by `sunet`
 
 ![image](https://user-images.githubusercontent.com/33023091/170104382-a47039cb-2737-49c2-993d-7bf6cb5eb5ee.png)

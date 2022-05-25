@@ -43,7 +43,7 @@ In addition, we provided the configuration file format of the data set in `./dat
         "1": "liver",
         "2": "tumer"
     },
-    "aim_label": "1",
+    "aim_label": ["1","2"],
     "modality": {
         "0": "CT"
     },

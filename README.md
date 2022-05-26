@@ -20,17 +20,12 @@ python train_edge.py
 
 We uploaded the reasoning results on lits2017 for reference. Location: [All stage](https://github.com/Human9000/FMST-PT/tree/main/val), [Consensus](https://github.com/Human9000/FMST-PT/tree/main/val/attention), [Attention](https://github.com/Human9000/FMST-PT/tree/main/val/consensus), [Edge](https://github.com/Human9000/FMST-PT/tree/main/val/edge), and some of them are shown in the figure below:
 
-- Consensus by `sunet`
+| `sunet` | `attnnet` | `edgenet` |
+| --- | --- | --- |
+| ![image](https://user-images.githubusercontent.com/33023091/170104382-a47039cb-2737-49c2-993d-7bf6cb5eb5ee.png) | ![image](https://user-images.githubusercontent.com/33023091/170104534-09d0311a-42af-4955-8284-0614ee38f20c.png) | ![image](https://user-images.githubusercontent.com/33023091/170104617-ccaeb89a-30ae-425e-93ab-ded79bf1f0ed.png) |
 
-![image](https://user-images.githubusercontent.com/33023091/170104382-a47039cb-2737-49c2-993d-7bf6cb5eb5ee.png)
 
-- Attention by `attnnet`
 
-![image](https://user-images.githubusercontent.com/33023091/170104534-09d0311a-42af-4955-8284-0614ee38f20c.png)
-
-- Edge by `edgenet`
-
-![image](https://user-images.githubusercontent.com/33023091/170104617-ccaeb89a-30ae-425e-93ab-ded79bf1f0ed.png)
 
 We try to train and infer 14 classifications on `btcv synapse` data set based on the weight of `lits 2017` liver 2 classification, which is only 2 hours on rtx3090, and give the output results of the visualization framework. We used 690 CT as the training set and 180 CT as the test set, and the reasoning speed of the model can still be maintained at FPS > 10.
 

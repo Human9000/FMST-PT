@@ -32,7 +32,7 @@ We uploaded the reasoning results on lits2017 for reference. Location: [All stag
 
 ![image](https://user-images.githubusercontent.com/33023091/170104617-ccaeb89a-30ae-425e-93ab-ded79bf1f0ed.png)
 
-We try to train and infer 14 classifications on `btcv synapse` data set based on the weight of lits liver 2 classification, and give the output results of the visualization framework.
+We try to train and infer 14 classifications on `btcv synapse` data set based on the weight of `lits 2017` liver 2 classification, which is only 2 hours on rtx3090, and give the output results of the visualization framework. We used 690 CT as the training set and 180 CT as the test set, and the reasoning speed of the model can still be maintained at FPS > 10.
 
 ![image](https://user-images.githubusercontent.com/33023091/170417497-a469b662-f8a1-49b7-be04-08645969f77d.png)
 

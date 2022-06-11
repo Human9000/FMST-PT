@@ -1,5 +1,5 @@
 # FMST-PT
-Implementation of paper [FMSF-PT: A fast 3D medical image segmentation framework guided by phased tasks](https://openreview.net/pdf?id=q5PStJkall) using pytorch.
+Implementation of paper `FMSF-PT: A fast 3D medical image segmentation framework guided by phased tasks` using pytorch.
 
 ![image](https://user-images.githubusercontent.com/33023091/169638563-d4b4d644-6e2c-44d4-a48c-21d7b67d77e0.png)
 
